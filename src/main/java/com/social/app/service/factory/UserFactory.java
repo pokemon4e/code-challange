@@ -1,7 +1,6 @@
 package com.social.app.service.factory;
 
 import com.social.app.data.entities.User;
-import org.springframework.stereotype.Component;
 
 /**
  * Provides methods for creating user entities.

@@ -84,6 +84,10 @@ public final class UserServiceImpl implements UserService {
         assert username != null;
         assert followUsername != null;
 
+        if (username.equals(followUsername)) {
+            throw new IllegalArgumentException("User can't follow himself.");
+        }
+
         final User user = this.getUserByUsername(username);
         final User followedUser = this.getUserByUsername(followUsername);
 

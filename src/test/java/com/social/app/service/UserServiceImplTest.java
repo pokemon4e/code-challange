@@ -260,6 +260,12 @@ public class UserServiceImplTest {
     }
 
     @Test
+    public void givenUserFollowingHimslefWhenFollowUserInvokedThenThrowIllegalArgumentException() {
+        this.exception.expect(IllegalArgumentException.class);
+        this.sut.followUser(USERNAME, USERNAME);
+    }
+
+    @Test
     public void givenValidUsernamesWhenFollowUserInvokedThenFollowUser() {
         when(this.repoMock.findByUsername(this.user1.getUsername()))
                 .thenReturn(Optional.of(this.user1));
