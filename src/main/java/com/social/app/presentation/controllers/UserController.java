@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -87,8 +86,8 @@ public final class UserController {
      * @param user     user to be followed
      */
     @PostMapping(path = "{username}/follow")
-    public void postPost(final @PathVariable String username,
-                         final @NotNull @RequestBody UserViewModel user) {
+    public void followUser(final @PathVariable String username,
+                           final @Valid @RequestBody UserViewModel user) {
         this.userService.followUser(username, user.getUsername());
     }
 
