@@ -1,5 +1,6 @@
 package com.social.app.data.dao;
 
+import com.social.app.data.dao.IRepository;
 import com.social.app.data.dao.impl.UserRepository;
 import com.social.app.data.entities.User;
 import org.junit.Assert;

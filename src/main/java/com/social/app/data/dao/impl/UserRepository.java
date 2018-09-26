@@ -2,6 +2,7 @@ package com.social.app.data.dao.impl;
 
 import com.social.app.data.dao.IRepository;
 import com.social.app.data.entities.User;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -12,6 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Repository that manages the user type.
  */
+@Repository
 public final class UserRepository implements IRepository<User, Long> {
 
     private final Map<String, User> usernameUsers;

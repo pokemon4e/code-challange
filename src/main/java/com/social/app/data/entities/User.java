@@ -2,10 +2,10 @@ package com.social.app.data.entities;
 
 import java.util.Collection;
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
-import java.util.TreeSet;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentSkipListSet;
 
 /**
  * Represents a user of the social application.
@@ -30,8 +30,8 @@ public final class User {
 
         this.id = id;
         this.username = username;
-        this.posts = new TreeSet<>();
-        this.followingUsers = new HashSet<>();
+        this.posts = new ConcurrentSkipListSet<>();
+        this.followingUsers = ConcurrentHashMap.newKeySet();
     }
 
     /**
