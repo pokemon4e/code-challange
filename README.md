@@ -4,7 +4,7 @@
 
 # Code Challenge [![Build Status](https://travis-ci.com/pokemon4e/code-challange.svg?branch=master)](https://travis-ci.com/pokemon4e/code-challange)
 
-Solution to the [code challange](https://github.com/HStoneAge/code-challenge/blob/master/README-DEVELOPERS.md) as part of the HSBC as part of the recruiting process for HSBC by  *Milena Sapunova*.
+Solution to the [code challange](https://github.com/HStoneAge/code-challenge/blob/master/README-DEVELOPERS.md) as part of the recruiting process for HSBC by  *Milena Sapunova*.
 
 **Requires:** `java 8`, `maven`  
 
